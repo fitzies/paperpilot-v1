@@ -11,8 +11,6 @@ export default function ModeButton(props: {
     let tempMode = {
       Humanize: false,
       Formal: false,
-      Expand: false,
-      Shorten: false,
       Creative: false,
       Childify: false,
     };

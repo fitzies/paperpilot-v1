@@ -10,8 +10,6 @@ export default function Page() {
   const [mode, setMode] = useState<MenuType>({
     Humanize: true,
     Formal: false,
-    // Expand: false,
-    // Shorten: false,
     Creative: false,
     Childify: false,
   });
@@ -52,7 +50,7 @@ export default function Page() {
   };
 
   return (
-    <div className="h-[70vh] w-[75vw] bg-zinc-800 mx-auto mt-[3vh] rounded-lg flex flex-col shadow-lg shadow-zinc-950">
+    <div className="lg:h-[75vh] h-[90vh] lg:w-[80vw] w-[90vw] bg-zinc-800 mx-auto mt-[3vh] rounded-lg flex flex-col shadow-lg shadow-zinc-950">
       <div className="w-full h-16 flex items-center px-4 lg:gap-3 bg-zinc-700 rounded-t-lg min-h-[4rem]">
         {Object.entries(mode).map((value) => {
           return (
@@ -75,9 +73,9 @@ export default function Page() {
           {wordCount <= 0 ? (
             <div
               onClick={getPasteData}
-              className="absolute lg:w-1/5 w-1/2 aspect-video border-4 border-purple-300 lg:block inset-x-[42%] inset-y-[40%] rounded-2xl font-interbold duration-150 text-purple-200 flex justify-center items-center cursor-pointer hover:-translate-y-1 opacity-75 hover:opacity-100"
+              className="absolute flex justify-center items-center lg:w-1/5 w-1/2 aspect-video border-4 border-purple-300 lg:inset-x-[42%] inset-x-[25%] lg:inset-y-[40%] inset-y-[40%] rounded-2xl font-interbold duration-150 text-purple-200 cursor-pointer hover:-translate-y-1 opacity-75 hover:opacity-100"
             >
-              <p>paste</p>
+              paste
             </div>
           ) : null}
           <div className="w-full h-[9%] flex items-center justify-between px-3">

@@ -30,12 +30,6 @@ function handleMode(mode: MenuEntryType) {
   if (mode === "Formal") {
     temp = "Please make this text more formal: ";
   }
-  // if (mode === "Expand") {
-  //   temp = "Please make this text longer by expanding it: ";
-  // }
-  // if (mode === "Shorten") {
-  //   temp = "Please make this text shorter: ";
-  // }
   if (mode === "Creative") {
     temp = "PLease make this text more creative: ";
   }
@@ -63,8 +57,6 @@ const findMode = (menu: any): MenuEntryType => {
 const menuObj = {
   Humanize: true,
   Formal: false,
-  // Expand: false,
-  // Shorten: false,
   Creative: false,
   Childify: false,
 };
